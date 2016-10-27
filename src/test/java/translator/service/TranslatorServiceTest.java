@@ -24,4 +24,8 @@ public class TranslatorServiceTest {
         assertEquals("Esto es una prueba de servicio de traducción",translatedText.getTranslation());
     }
 
+    public void translateTestENtoaAR() throws Exception {
+        TranslatedText translatedText = translatorService.translate("en", "hy", "This is a simple test");
+        assertEquals("սա պարզ տեստ",translatedText.getTranslation());
+    }
 }
